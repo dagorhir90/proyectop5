@@ -1,0 +1,152 @@
+body {
+  background-image: url(./pjalive.jpg);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  font-family: system-ui, Roboto, sans-serif;
+  font-weight: bold;
+}
+h3 {
+  color: #ffffff;
+  font-size: 35px;
+}
+.centrar{
+  display: flex;
+  justify-content: center;
+}
+#dia{ grid-area: dia ;}
+#ubicacion{ grid-area: ubicacion ;}
+#local{ grid-area: local ;}
+#detalles{ grid-area: detalles ;}
+#tickets{ grid-area: tickets ;}
+
+#diaResp{ grid-area: diaResp ;}
+#ubicacionResp{ grid-area: ubicacionResp ;}
+#localResp{ grid-area: localResp ;}
+#detallesResp{ grid-area: detallesResp ;}
+#ticketsResp{ grid-area: ticketsResp ;}
+
+
+#containerTickets {
+  background-color: #c1bfb5;
+  border: solid 4px #b02e0c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas: "dia ubicacion local detalles tickets"
+                     "diaResp ubicacionResp localResp detallesResp ticketsResp";}
+
+
+.container {
+  display: flex;
+  background-color: #c1bfb5;
+  flex-direction: column;
+  border: solid 4px #b02e0c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  align-items: center;
+  width: 40%;
+  height: 70%;
+  text-align: center;
+}
+input {
+  justify-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 7%;
+  margin: 7px;
+  width: auto;
+}
+.sidebar {
+  display: flex;
+  background-color: #c1bfb5;
+  flex-direction: column;
+  color: black;
+  max-width: fit-content;
+  width: fit-content;
+  height: 100vh;
+  max-width: 10%;
+  position: fixed;
+  margin-inline: auto;
+  padding: 15px;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.fotodeperfil {
+  border-radius: 50%;
+  width: 25%;
+  
+}
+.sidebar a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: black;
+  border-bottom: solid white 2px;
+}
+.albumes {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 500px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: rgb(red, green, rgb(3, 3, 49));
+}
+.disco {
+  background-color: #c1bfb5;
+  border: solid 4px #b02e0c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  width: fit-content;
+  overflow: auto;
+  text-align: center;
+  position: relative;
+  width: 1000px;
+  height: 250px;
+  left: 400px;
+}
+/* .temas{ 
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #eb4511;
+  margin: 5px;
+  border: solid 4px #b02e0c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 98%;
+}*/
+.sm{
+  font-weight: bold;
+}
